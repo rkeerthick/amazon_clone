@@ -12,7 +12,12 @@ const Home = () => {
         />
 
         <div className="home__row">
-          <Product />
+          <Product
+            title="lorem ipsum terai"
+            price={19.99}
+            rating={10}
+            image='https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg'
+          />
           <Product />
         </div>
         <div className="home__row">
