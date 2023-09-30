@@ -13,20 +13,51 @@ const Home = () => {
 
         <div className="home__row">
           <Product
-            title="lorem ipsum terai"
-            price={19.99}
-            rating={10}
-            image='https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg'
+            id="12321341"
+            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
+            price={11.96}
+            rating={5}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
           />
-          <Product />
+          <Product
+            id="3489245"
+            title="tv"
+            price={38000}
+            rating={4}
+            image="https://m.media-amazon.com/images/I/518sTcK7UGL._AC_UF226,226_FMjpg_.jpg"
+          />
         </div>
         <div className="home__row">
-          <Product />
-          <Product />
-          <Product />
+          <Product
+            id="4739587"
+            title="phone"
+            price={14999}
+            rating={4}
+            image="https://m.media-amazon.com/images/I/41IcuNkyrdL._AC_UF226,226_FMjpg_.jpg"
+          />
+          <Product
+            id="8294832"
+            title="laptop"
+            price={47999}
+            rating={5}
+            image="https://m.media-amazon.com/images/I/418A-WSZT9L._AC_UF226,226_FMjpg_.jpg"
+          />
+          <Product
+            id="438292389"
+            title="phone"
+            price={32299}
+            rating={5}
+            image="https://m.media-amazon.com/images/I/51hvBtWe0IL._AC_UF226,226_FMjpg_.jpg"
+          />
         </div>
         <div className="home__row">
-          <Product />
+          <Product
+            id="3847538573"
+            title="home theater"
+            price={12990}
+            rating={5}
+            image="https://m.media-amazon.com/images/I/316QXV5qd6L._AC_UF226,226_FMjpg_.jpg"
+          />
         </div>
       </div>
     </div>
