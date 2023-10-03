@@ -10,6 +10,11 @@ const Checkout = () => {
 
         <div className="">
           <h2 className="checkout__title">Your Shopping Basket</h2>
+
+          {/* Checkout Products */}
+          {/* Checkout Products */}
+          {/* Checkout Products */}
+          {/* Checkout Products */}
         </div>
       </div>
       <div className="checkout__right">
