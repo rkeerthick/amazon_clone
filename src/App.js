@@ -1,9 +1,8 @@
-
-import Routing from './component/Routing';
+import Routing from "./component/Routing";
 
 function App() {
   return (
-      <Routing />
+    <Routing />
   );
 }
 
