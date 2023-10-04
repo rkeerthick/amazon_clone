@@ -1,12 +1,13 @@
 import React from "react";
 import { useStateValue } from "../StateProvider";
+import { actions } from "../Actions";
 
 const Product = ({ id, title, price, rating, image }) => {
   const [{basket}, dispatch] = useStateValue();
   
   const addToBasket = () => {
     dispatch({
-      type: "ADD_TO_BASKET",
+      type: actions.addToBasket,
       payload: {
         id: id,
         title: title,
