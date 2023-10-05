@@ -1,15 +1,17 @@
 import React from "react";
 import { useStateValue } from "../StateProvider";
 import { actions } from "../Actions";
+import { v4 as uuid } from "uuid";
 
-const Product = ({ id, title, price, rating, image }) => {
-  const [{basket}, dispatch] = useStateValue();
-  
+const Product = ({ productId, title, price, rating, image }) => {
+  const [{ basket }, dispatch] = useStateValue();
+
   const addToBasket = () => {
     dispatch({
       type: actions.addToBasket,
       payload: {
-        id: id,
+        itemId: uuid(),
+        productId: productId,
         title: title,
         image: image,
         price: price,
