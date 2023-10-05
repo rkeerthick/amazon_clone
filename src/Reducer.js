@@ -1,3 +1,5 @@
+import { actions } from "./Actions";
+
 export const initialState = {
   basket: [],
 };
@@ -12,7 +14,7 @@ export const getStateTotal = (basket) => {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "ADD_TO_BASKET":
+    case actions.addToBasket:
       return {
         ...state,
         basket: [...state.basket, action.payload],
