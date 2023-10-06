@@ -2,14 +2,21 @@ import React from "react";
 import { useStateValue } from "../StateProvider";
 import { actions } from "../Actions";
 
-const CheckoutProduct = ({ itemId, productId, title, image, price, rating }) => {
-  const [{basket}, dispatch] = useStateValue();
+const CheckoutProduct = ({
+  itemId,
+  productId,
+  title,
+  image,
+  price,
+  rating,
+}) => {
+  const [{ basket }, dispatch] = useStateValue();
   const removeItem = () => {
     dispatch({
       type: actions.removeFromBasket,
-      id: itemId
-    })
-  }
+      id: itemId,
+    });
+  };
   return (
     <div className="checkoutProduct">
       <img src={image} alt="" className="checkoutProduct__image" />

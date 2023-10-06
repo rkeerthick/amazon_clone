@@ -18,8 +18,8 @@ const Header = () => {
         <Search className="header__searchIcon" />
       </div>
 
-      <div className="header__nav">
-        <Link to='/login'>
+      <div className="header__nav"> 
+        <Link to="/login">
           <div className="header__option">
             <span className="header__optionLine1">Hello Guest</span>
             <span className="header__optionLine2">Sign In</span>

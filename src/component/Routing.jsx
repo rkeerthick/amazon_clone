@@ -3,14 +3,15 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./Home";
 import Header from "./Header";
 import Checkout from "./Checkout";
+import Login from "./Login";
+
 
 const Routing = () => {
   return (
     <BrowserRouter>
       <div className="app">
-        <Header />
         <Routes>
-          <Route path="/login" />
+          <Route path="/login" element={<Login />} />
           <Route
             path="/"
             // element={<Home />}
